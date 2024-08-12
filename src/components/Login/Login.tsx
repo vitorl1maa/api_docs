@@ -3,12 +3,18 @@ import { useState } from "react";
 import { Input } from "../ui/input";
 import { Button } from "../ui/button";
 import { Eye, EyeOff } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
+  const navigation = useNavigate();
 
   const togglePasswordVisibility = () => {
     setShowPassword((prev) => !prev);
+  };
+
+  const handleNavigation = () => {
+    navigation("/projects");
   };
 
   return (
@@ -51,6 +57,7 @@ const Login = () => {
           <Button
             variant="outline"
             className="w-full font-bold mt-5 hover:translate-y-2 border-blue-500 bg-blue-600/10 text-blue-500"
+            onClick={handleNavigation}
           >
             Entrar
           </Button>
