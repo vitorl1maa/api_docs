@@ -1,5 +1,4 @@
-import CardProject from "@/components/CardProject/CardProject";
-import SideBar from "@/components/SideBar/SideBar";
+import CardProject from "../../components/CardProject/CardProject";
 
 const Projects = () => {
   return (

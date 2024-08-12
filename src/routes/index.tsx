@@ -1,7 +1,6 @@
-import Home from "@/pages/home/Home";
-import Projects from "@/pages/projects/Projects";
-import projects from "@/pages/projects/Projects";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import Home from "../pages/home/Home";
+import Projects from "../pages/projects/Projects";
 
 const RoutesApp: React.FC = () => {
   return (

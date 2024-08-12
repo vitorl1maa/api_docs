@@ -1,6 +1,4 @@
-import { useContext } from "react";
-
-import Login from "@/components/Login/Login";
+import Login from "../../components/Login/Login";
 
 const Home = () => {
   return (

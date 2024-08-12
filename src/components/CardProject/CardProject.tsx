@@ -1,21 +1,14 @@
-import iconImage from "@/assets/icon.png";
+import iconImage from "../../assets/icon.png";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuGroup,
   DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuPortal,
   DropdownMenuSeparator,
-  DropdownMenuShortcut,
-  DropdownMenuSub,
-  DropdownMenuSubContent,
-  DropdownMenuSubTrigger,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+} from "../ui/dropdown-menu";
 import {
   ArchiveRestore,
-  EllipsisVertical,
   EllipsisVerticalIcon,
   FolderOpenDot,
   FolderPlus,
@@ -23,8 +16,7 @@ import {
   Trash2,
 } from "lucide-react";
 import { Icon } from "@iconify/react";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Button } from "../ui/button";
+import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 
 const CardProject = () => {
   return (

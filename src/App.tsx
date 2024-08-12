@@ -1,10 +1,8 @@
-import Home from "@/pages/home/Home";
-
-import { ThemeProvider } from "@/context/ThemeContext";
-import { ButtonTheme } from "@/components/ButtonTheme/ButtonTheme";
-
 import { BookText } from "lucide-react";
-import RoutesApp from "@/routes";
+
+import { ThemeProvider } from "./context/ThemeContext";
+import { ButtonTheme } from "./components/ButtonTheme/ButtonTheme";
+import RoutesApp from "./routes";
 
 function App() {
   return (
