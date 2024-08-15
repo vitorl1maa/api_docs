@@ -73,3 +73,19 @@
 * {
   font-family: "Open Sans", sans-serif;
 }
+
+::-webkit-scrollbar {
+  width: 7px;
+
+}
+
+::-webkit-scrollbar-track {
+  background: trasparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 15px;
+  height: 30%;
+
+}

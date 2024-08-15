@@ -11,12 +11,13 @@ import {
   ArchiveRestore,
   EllipsisVerticalIcon,
   FolderOpenDot,
-  FolderPlus,
   Link,
+  Pencil,
   Trash2,
 } from "lucide-react";
 import { Icon } from "@iconify/react";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
+import NewModalProject from "../NewProjectModal/NewProjectModal";
 
 const CardProject = () => {
   return (
@@ -42,6 +43,14 @@ const CardProject = () => {
                     <span>Deletar</span>
                   </DropdownMenuItem>
                 </DropdownMenuGroup>
+                <DropdownMenuSeparator />
+                <DropdownMenuGroup>
+                  <DropdownMenuItem className="flex items-center gap-2 cursor-pointer ">
+                    <Pencil size={15} />
+                    <span>Editar</span>
+                  </DropdownMenuItem>
+                </DropdownMenuGroup>
+
                 <DropdownMenuSeparator />
                 <DropdownMenuGroup>
                   <DropdownMenuItem className="flex items-center gap-2 cursor-pointer ">
@@ -108,6 +117,16 @@ const CardProject = () => {
                   </DropdownMenuItem>
                 </DropdownMenuGroup>
                 <DropdownMenuSeparator />
+
+                <DropdownMenuGroup>
+                  <DropdownMenuItem className="flex items-center gap-2 cursor-pointer ">
+                    <Pencil size={15} />
+                    <span>Editar</span>
+                  </DropdownMenuItem>
+                </DropdownMenuGroup>
+
+                <DropdownMenuSeparator />
+
                 <DropdownMenuGroup>
                   <DropdownMenuItem className="flex items-center gap-2 cursor-pointer ">
                     <ArchiveRestore size={15} />
@@ -143,14 +162,7 @@ const CardProject = () => {
         </div>
       </div>
 
-      <div className="border rounded-md h-48 w-72 flex justify-center items-center cursor-pointer hover:border-blue-500">
-        <div className="flex flex-col items-center hover:text-blue-500">
-          <span>
-            <FolderPlus />
-          </span>
-          <button className="font-bold text-md">Novo projeto</button>
-        </div>
-      </div>
+      <NewModalProject />
     </section>
   );
 };

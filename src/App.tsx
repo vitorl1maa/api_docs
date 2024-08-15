@@ -16,7 +16,10 @@ function App() {
             <p>APIs Doc</p>
           </div>
 
-          <ButtonTheme />
+          <div className="flex items-center gap-6">
+            <h1 className="font-bold">Fulano de Tal</h1>
+            <ButtonTheme />
+          </div>
         </div>
 
         <RoutesApp />
