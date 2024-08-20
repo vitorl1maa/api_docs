@@ -17,8 +17,15 @@ import { AvatarFallback } from "../ui/avatar";
 import { Input } from "../ui/input";
 import SelectInput from "../SelectInput/SelectInput";
 import { Button } from "../ui/button";
+import { useNavigate } from "react-router-dom";
 
 const NewModalProject = () => {
+  const navigate = useNavigate();
+
+  const handleNavigation = () => {
+    navigate("/api-doc");
+  };
+
   return (
     <AlertDialog>
       <AlertDialogTrigger>
@@ -75,7 +82,7 @@ const NewModalProject = () => {
             <div className="flex flex-col gap-2 w-full">
               <label className="text-sm font-bold">Adicionar APIs</label>
 
-              <Button className="w-full">
+              <Button onClick={handleNavigation} className="w-full">
                 <LibraryBig />
               </Button>
             </div>
